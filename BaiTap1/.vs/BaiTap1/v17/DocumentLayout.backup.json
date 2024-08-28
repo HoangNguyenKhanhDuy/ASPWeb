@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\github\\ASPWeb\\BaiTap1\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F419062F-4094-4C5C-AC73-33BEACF9EBF5}|BaiTap1\\BaiTap1.csproj|c:\\github\\aspweb\\baitap1\\baitap1\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{F419062F-4094-4C5C-AC73-33BEACF9EBF5}|BaiTap1\\BaiTap1.csproj|solutionrelative:baitap1\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F419062F-4094-4C5C-AC73-33BEACF9EBF5}|BaiTap1\\BaiTap1.csproj|c:\\github\\aspweb\\baitap1\\baitap1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{F419062F-4094-4C5C-AC73-33BEACF9EBF5}|BaiTap1\\BaiTap1.csproj|solutionrelative:baitap1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
@@ -19,6 +23,18 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\github\\ASPWeb\\BaiTap1\\BaiTap1\\.gitignore",
+              "RelativeDocumentMoniker": "BaiTap1\\.gitignore",
+              "ToolTip": "C:\\github\\ASPWeb\\BaiTap1\\BaiTap1\\.gitignore",
+              "RelativeToolTip": "BaiTap1\\.gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-08-24T09:39:50.983Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\github\\ASPWeb\\BaiTap1\\BaiTap1\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "BaiTap1\\Views\\Home\\Index.cshtml",
@@ -26,8 +42,7 @@
               "RelativeToolTip": "BaiTap1\\Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-08-24T08:10:42.731Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-24T08:10:42.731Z"
             }
           ]
         }
