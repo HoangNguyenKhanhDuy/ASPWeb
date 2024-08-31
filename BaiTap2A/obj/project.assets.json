@@ -5778,11 +5778,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\github\\ASPWeb\\BaiTap2A\\BaiTap2A\\BaiTap2A.csproj",
+      "projectUniqueName": "C:\\Users\\bnguy\\Downloads\\ASPWeb\\BaiTap2A\\BaiTap2A\\BaiTap2A.csproj",
       "projectName": "BaiTap2A",
-      "projectPath": "C:\\github\\ASPWeb\\BaiTap2A\\BaiTap2A\\BaiTap2A.csproj",
+      "projectPath": "C:\\Users\\bnguy\\Downloads\\ASPWeb\\BaiTap2A\\BaiTap2A\\BaiTap2A.csproj",
       "packagesPath": "C:\\Users\\bnguy\\.nuget\\packages\\",
-      "outputPath": "C:\\github\\ASPWeb\\BaiTap2A\\BaiTap2A\\obj\\",
+      "outputPath": "C:\\Users\\bnguy\\Downloads\\ASPWeb\\BaiTap2A\\BaiTap2A\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\bnguy\\AppData\\Roaming\\NuGet\\NuGet.Config",
