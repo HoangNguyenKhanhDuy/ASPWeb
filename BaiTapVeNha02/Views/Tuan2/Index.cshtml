@@ -3,9 +3,24 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Thông tin sinh viên</h1>
+<div class="header">
+    <h1>Bài tập</h1>
+</div>
 
-<p>Họ tên: @ViewBag.HoTen</p>
-<p>MSSV: @ViewBag.MSSV</p>
-<p>Năm: @ViewBag.Nam</p>
+<div class="container">
 
+    <div class="left-column">
+        <p>Họ tên: @ViewBag.HoTen</p>
+        <p>MSSV: @ViewBag.MSSV</p>
+    </div>
+
+    <div class="right-column">
+        <p>Giới thiệu bản thân</p>
+        Hello!
+        <p>@ViewBag.GioiThieuBanThan</p>
+    </div>
+</div>
+
+<footer>
+    <p>Copyright @ViewBag.HoTen - @ViewBag.Nam</p>
+</footer>
