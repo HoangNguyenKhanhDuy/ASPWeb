@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "coRWovDoyVV07kIOiWn7sVmyZUuYN1tlrrjN7wC4gkY=",
+  "Hash": "Lqt1WaTDu2/FqQWJItPDQOsz+APQbAGMuyaDBohAwrc=",
   "Source": "BaiTapKiemTra01",
   "BasePath": "_content/BaiTapKiemTra01",
   "Mode": "Default",
@@ -205,6 +205,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\animal-bg.jpg"
+    },
+    {
+      "Identity": "C:\\GitHub\\ASPWeb\\BaiTapKiemTra01\\wwwroot\\images\\AnhChup.png",
+      "SourceId": "BaiTapKiemTra01",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\GitHub\\ASPWeb\\BaiTapKiemTra01\\wwwroot\\",
+      "BasePath": "_content/BaiTapKiemTra01",
+      "RelativePath": "images/AnhChup.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\AnhChup.png"
     },
     {
       "Identity": "C:\\GitHub\\ASPWeb\\BaiTapKiemTra01\\wwwroot\\images\\bird.jpg",
@@ -870,6 +889,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\twitter.png"
+    },
+    {
+      "Identity": "C:\\GitHub\\ASPWeb\\BaiTapKiemTra01\\wwwroot\\img\\AnhChup\\AnhChup.png",
+      "SourceId": "BaiTapKiemTra01",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\GitHub\\ASPWeb\\BaiTapKiemTra01\\wwwroot\\",
+      "BasePath": "_content/BaiTapKiemTra01",
+      "RelativePath": "img/AnhChup/AnhChup.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\AnhChup\\AnhChup.png"
     },
     {
       "Identity": "C:\\GitHub\\ASPWeb\\BaiTapKiemTra01\\wwwroot\\js\\bootstrap.js",

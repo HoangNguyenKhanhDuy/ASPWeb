@@ -33,6 +33,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\GitHub\\ASPWeb\\BaiTapKiemTra01\\wwwroot\\images\\AnhChup.png",
+      "PackagePath": "staticwebassets\\images\\AnhChup.png"
+    },
+    {
       "Id": "C:\\GitHub\\ASPWeb\\BaiTapKiemTra01\\wwwroot\\images\\DienThoai.jpg",
       "PackagePath": "staticwebassets\\images\\DienThoai.jpg"
     },
@@ -175,6 +179,10 @@
     {
       "Id": "C:\\GitHub\\ASPWeb\\BaiTapKiemTra01\\wwwroot\\images\\twitter.png",
       "PackagePath": "staticwebassets\\images\\twitter.png"
+    },
+    {
+      "Id": "C:\\GitHub\\ASPWeb\\BaiTapKiemTra01\\wwwroot\\img\\AnhChup\\AnhChup.png",
+      "PackagePath": "staticwebassets\\img\\AnhChup\\AnhChup.png"
     },
     {
       "Id": "C:\\GitHub\\ASPWeb\\BaiTapKiemTra01\\wwwroot\\js\\bootstrap.js",
