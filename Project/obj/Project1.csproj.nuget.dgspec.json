@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\GitHub\\ASPWeb\\Project1\\Project1.csproj": {}
+    "C:\\GitHub\\ASPWeb\\Project\\Project1.csproj": {}
   },
   "projects": {
-    "C:\\GitHub\\ASPWeb\\Project1\\Project1.csproj": {
+    "C:\\GitHub\\ASPWeb\\Project\\Project1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\GitHub\\ASPWeb\\Project1\\Project1.csproj",
+        "projectUniqueName": "C:\\GitHub\\ASPWeb\\Project\\Project1.csproj",
         "projectName": "Project1",
-        "projectPath": "C:\\GitHub\\ASPWeb\\Project1\\Project1.csproj",
+        "projectPath": "C:\\GitHub\\ASPWeb\\Project\\Project1.csproj",
         "packagesPath": "C:\\Users\\bnguy\\.nuget\\packages\\",
-        "outputPath": "C:\\GitHub\\ASPWeb\\Project1\\obj\\",
+        "outputPath": "C:\\GitHub\\ASPWeb\\Project\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bnguy\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -69,6 +69,10 @@
               "version": "[8.0.8, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[8.0.8, )"
             },
