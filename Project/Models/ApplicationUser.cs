@@ -1,8 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
 using System.ComponentModel.DataAnnotations;
 
-namespace Project1.Models
+namespace Project.Models
 {
     public class ApplicationUser : IdentityUser
     {

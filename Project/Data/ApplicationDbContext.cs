@@ -1,18 +1,19 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using Project1.Models;
+using Project.Models;
 
-namespace Project1.Data
+namespace Project.Data
 {
-	public class ApplicationDbContext : IdentityDbContext
-	{
-		public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
-			: base(options)
-		{
-		}
-		public DbSet<TheLoai> TheLoai { get; set; }
-		public DbSet<SanPham> SanPham { get; set; }
+    public class ApplicationDbContext : IdentityDbContext
+    {
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
+            : base(options)
+        {
 
-        public DbSet<ApplicationUser> ApplicationUsers { get; set; }
+        }
+        public DbSet<TheLoai> TheLoai { get; set; }
+        public DbSet<SanPham> SanPham { get; set; }
+        public DbSet<ApplicationUser> ApplicationUser { get; set; }
+        public DbSet<GioHang> GioHang { get; set; }
     }
 }

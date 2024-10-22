@@ -20,9 +20,9 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
-using Project1.Models;
+using Project.Models;
 
-namespace Project1.Areas.Identity.Pages.Account
+namespace Project.Areas.Identity.Pages.Account
 {
     public class RegisterModel : PageModel
     {
@@ -33,14 +33,13 @@ namespace Project1.Areas.Identity.Pages.Account
         private readonly ILogger<RegisterModel> _logger;
         private readonly IEmailSender _emailSender;
         private readonly RoleManager<IdentityRole> _roleManager;
-       
 
         public RegisterModel(
             UserManager<IdentityUser> userManager,
             IUserStore<IdentityUser> userStore,
             SignInManager<IdentityUser> signInManager,
             ILogger<RegisterModel> logger,
-            IEmailSender emailSender,  RoleManager<IdentityRole> roleManager)
+            IEmailSender emailSender,RoleManager<IdentityRole> roleManager)
         {
             _userManager = userManager;
             _userStore = userStore;
@@ -48,7 +47,7 @@ namespace Project1.Areas.Identity.Pages.Account
             _signInManager = signInManager;
             _logger = logger;
             _emailSender = emailSender;
-            _roleManager = roleManager; 
+            _roleManager = roleManager;
         }
 
         /// <summary>
@@ -104,11 +103,12 @@ namespace Project1.Areas.Identity.Pages.Account
             [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
             public string ConfirmPassword { get; set; }
             [Required]
-            public string Name { get; set; }
-            public string Address { get; set; }
+            public string  Name { get; set; }
+            public string  Address { get; set; }
             public string Role { get; set; }
             [ValidateNever]
-            public IEnumerable<SelectListItem> RoleList { get; set; }
+            public IEnumerable<SelectListItem> Rolelist {  get; set; }
+            public IQueryable<SelectListItem> RoleList { get; internal set; }
         }
 
 
@@ -145,13 +145,14 @@ namespace Project1.Areas.Identity.Pages.Account
                 var result = await _userManager.CreateAsync(user, Input.Password);
                 user.Name = Input.Name;
                 user.Address = Input.Address;
+
                 if (result.Succeeded)
                 {
                     if (Input.Role == null)
                     {
                         await _userManager.AddToRoleAsync(user, "User");
                     }
-                    else 
+                    else
                     {
                         await _userManager.AddToRoleAsync(user, Input.Role);
                     }

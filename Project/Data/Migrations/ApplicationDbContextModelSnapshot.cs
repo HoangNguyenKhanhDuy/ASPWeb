@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Project1.Data;
+using Project.Data;
 
 #nullable disable
 
-namespace Project1.Data.Migrations
+namespace Project.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
     partial class ApplicationDbContextModelSnapshot : ModelSnapshot
@@ -176,12 +176,10 @@ namespace Project1.Data.Migrations
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
                     b.Property<string>("LoginProvider")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("ProviderKey")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("ProviderDisplayName")
                         .HasColumnType("nvarchar(max)");
@@ -218,12 +216,10 @@ namespace Project1.Data.Migrations
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("LoginProvider")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Name")
-                        .HasMaxLength(128)
-                        .HasColumnType("nvarchar(128)");
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Value")
                         .HasColumnType("nvarchar(max)");
@@ -233,7 +229,34 @@ namespace Project1.Data.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("Project1.Models.SanPham", b =>
+            modelBuilder.Entity("Project.Models.GioHang", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("ApplicationUserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.Property<int>("SanPhamId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ApplicationUserId");
+
+                    b.HasIndex("SanPhamId");
+
+                    b.ToTable("GioHang");
+                });
+
+            modelBuilder.Entity("Project.Models.SanPham", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -245,27 +268,26 @@ namespace Project1.Data.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ImageUrl")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("TheLoaiId")
-                        .HasColumnType("int");
-
-                    b.Property<double>("price")
+                    b.Property<double>("Price")
                         .HasColumnType("float");
+
+                    b.Property<int>("TheLoaild")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("TheLoaiId");
+                    b.HasIndex("TheLoaild");
 
                     b.ToTable("SanPham");
                 });
 
-            modelBuilder.Entity("Project1.Models.TheLoai", b =>
+            modelBuilder.Entity("Project.Models.TheLoai", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -280,16 +302,12 @@ namespace Project1.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Suppliers")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.HasKey("Id");
 
                     b.ToTable("TheLoai");
                 });
 
-            modelBuilder.Entity("Project1.Models.ApplicationUser", b =>
+            modelBuilder.Entity("Project.Models.ApplicationUser", b =>
                 {
                     b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityUser");
 
@@ -354,11 +372,30 @@ namespace Project1.Data.Migrations
                         .IsRequired();
                 });
 
-            modelBuilder.Entity("Project1.Models.SanPham", b =>
+            modelBuilder.Entity("Project.Models.GioHang", b =>
                 {
-                    b.HasOne("Project1.Models.TheLoai", "TheLoai")
+                    b.HasOne("Project.Models.ApplicationUser", "ApplicationUser")
                         .WithMany()
-                        .HasForeignKey("TheLoaiId")
+                        .HasForeignKey("ApplicationUserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Project.Models.SanPham", "SanPham")
+                        .WithMany()
+                        .HasForeignKey("SanPhamId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("ApplicationUser");
+
+                    b.Navigation("SanPham");
+                });
+
+            modelBuilder.Entity("Project.Models.SanPham", b =>
+                {
+                    b.HasOne("Project.Models.TheLoai", "TheLoai")
+                        .WithMany()
+                        .HasForeignKey("TheLoaild")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
